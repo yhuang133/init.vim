@@ -80,6 +80,7 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+"tabs not spaces, 4 col leng
 set autoindent
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
@@ -87,4 +88,21 @@ set tabstop=4
 set softtabstop=4
 " On pressing tab, insert 4 spaces
 set noexpandtab
+
+set hidden
+set showmatch
+set ignorecase
+set smartcase
+set smarttab
+set incsearch
+set history=9999
+set undolevels=9999
+set title
+set visualbell
+set noerrorbells
+set nobackup
+set noswapfile
+set pastetoggle=<F2>
+set undofile
+set undodir=~/.config/nvim/.vimundo
 let g:startify_session_persistence=1
