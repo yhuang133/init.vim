@@ -80,10 +80,11 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-" show existing tab with 4 spaces width
-set tabstop=4
+set autoindent
 " when indenting with '>', use 4 spaces width
 set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 " On pressing tab, insert 4 spaces
-set expandtab
+set noexpandtab
 let g:startify_session_persistence=1
